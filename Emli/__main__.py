@@ -82,7 +82,7 @@ def get_readable_time(seconds: int) -> str:
 
 PM_START_TEXT = """
 *Hello {} !*
-✪ I'm Emli anime-theme management bot [✨](https://te.legra.ph/file/074ef8d210745e3380baf.jpg)
+✪ I'm Kittu anime-theme management bot [✨](https://telegra.ph/file/811e048d4062ab07c10de.jpg)
 ────────────────────────
 × *Bot Uptime:* `{}`
 × `{}` *users, across* `{}` *chats*
@@ -92,35 +92,32 @@ PM_START_TEXT = """
 
 buttons = [
     [
-        InlineKeyboardButton(text="About Emli Robot", callback_data="emli_"),
+        InlineKeyboardButton(text="About Kittu Robot", callback_data="emli_"),
     ],
     [
         InlineKeyboardButton(text="Help", callback_data="help_back"),
         InlineKeyboardButton(
-            text="support!​​", url="t.me/OMG_info"
+            text="support!​​", url="t.me/RazeFriendsZone"
         ),
     ],
     [
         InlineKeyboardButton(
-            text="➗ Add Emli To Your Group ➗", url="t.me/EmiexRobot?startgroup=new"),
+            text="⚜️ Add Kittu To Your Group ⚜️", url="t.me/Kittu_Robot?startgroup=new"),
     ],
 ]
 
 
 HELP_STRINGS = """
 Click on the button bellow to get description about specifics command."""
-
-EMI_IMG = "https://te.legra.ph/file/074ef8d210745e3380baf.jpg"
+EMI_IMG = "https://telegra.ph/file/811e048d4062ab07c10de.jpg"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
- You can support the project by contacting @shado_hackers \
+ You can support the project by contacting @XDacchuX \
  Supporting isnt always financial! \
  Those who cannot provide monetary support are welcome to help us develop the bot at ."""
 
 IMPORTED = {}
-MIGRATEABLE = []
-HELPABLE = {}
-STATS = []
+MIGRATEABLE
 USER_INFO = []
 DATA_IMPORT = []
 DATA_EXPORT = []
@@ -229,7 +226,7 @@ def start(update: Update, context: CallbackContext):
             )
     else:
         update.effective_message.reply_text(
-            f"<b>Hi👋 I'm Emli robot!</b>\n<b>Started working since:</b> <code>{uptime}</code>",
+            f"<b>Hi👋 I'm Kittu robot!</b>\n<b>Started working since:</b> <code>{uptime}</code>",
             parse_mode=ParseMode.HTML
        )
 
@@ -360,7 +357,7 @@ def emli_about_callback(update, context):
     query = update.callback_query
     if query.data == "emli_":
         query.message.edit_text(
-            text="๏ I'm *Emli*, a powerful group management bot built to help you manage your group easily."
+            text="๏ I'm *Kittu*, a powerful group management bot built to help you manage your group easily."
             "\n• I can restrict users."
             "\n• I can greet users with customizable welcome messages and even set a group's rules."
             "\n• I have an advanced anti-flood system."
@@ -368,7 +365,7 @@ def emli_about_callback(update, context):
             "\n• I have a note keeping system, blacklists, and even predetermined replies on certain keywords."
             "\n• I check for admins' permissions before executing any command and more stuffs"
             "\n\n_Emli's licensed under the GNU General Public License v3.0_"
-            "\n\n Click on button bellow to get basic help for Emli.",
+            "\n\n Click on button bellow to get basic help for Kittu.",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=False,
             reply_markup=InlineKeyboardMarkup(
@@ -408,7 +405,7 @@ def emli_about_callback(update, context):
     elif query.data == "emli_admin":
         query.message.edit_text(
             text=f"*๏ Let's make your group bit effective now*"
-            "\nCongragulations, Emli now ready to manage your group."
+            "\nCongragulations, Kittu now ready to manage your group."
             "\n\n*Admin Tools*"
             "\nBasic Admin tools help you to protect and powerup your group."
             "\nYou can ban members, Kick members, Promote someone as admin through commands of bot."
@@ -435,14 +432,14 @@ def emli_about_callback(update, context):
         )
     elif query.data == "emli_support":
         query.message.edit_text(
-            text="*๏ Emli support chats*"
-            "\nJoin My Support Group/Channel for see or report a problem on Emli.",
+            text="*๏ Kittu support chats*"
+            "\nJoin My Support Group/Channel for see or report a problem on Kittu.",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Support", url="t.me/OMG_info"),
-                    InlineKeyboardButton(text="Updates", url="https://t.me/OMG_info"),
+                    InlineKeyboardButton(text="Support", url="t.me/RazeFriendsZone"),
+                    InlineKeyboardButton(text="Updates", url="https://t.me/RazeBots"),
                  ],
                  [
                     InlineKeyboardButton(text="Go Back", callback_data="emli_"),
@@ -455,13 +452,13 @@ def emli_about_callback(update, context):
 
     elif query.data == "emli_credit":
         query.message.edit_text(
-            text=f"<b>๏ Credis for Emli</b>\n"
-            f"\nHere Developers Making The Emli",
+            text=f"<b>๏ Credis for Kittu</b>\n"
+            f"\nHere Developers Making The Kittu",
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="LUSIFER", url="https://mobile.twitter.com/Lusifernoob"),
+                    InlineKeyboardButton(text="Darshan", url="https://twitter.com/Dacchu_xy"),
                  ],
                  [
                     InlineKeyboardButton(text="Go Back", callback_data="emli_"),
@@ -480,15 +477,15 @@ def Source_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="LUSIFER", url="https://t.me/shado_hackers"),
-                    InlineKeyboardButton(text="𝚂𝚞𝚙𝚙𝚘𝚛𝚝", url="https://t.me/OMG_info"),
+                    InlineKeyboardButton(text="DARSHAN", url="https://t.me/XDacchuX"),
+                    InlineKeyboardButton(text="𝚂𝚞𝚙𝚙𝚘𝚛𝚝", url="https://t.me/RazeFriendsZone"),
                  ],
                  [
-                    InlineKeyboardButton(text="𝙻𝚎𝚎𝚌𝚑", url="https://t.me/nexleech"),
-                    InlineKeyboardButton(text="𝙾𝚝𝚑𝚎𝚛 𝚋𝚘𝚝", url="https://t.me/OMG_info/3990"),
+                    InlineKeyboardButton(text="Chats", url="https://t.me/cute_1o"),
+                    InlineKeyboardButton(text="𝙾𝚝𝚑𝚎𝚛 𝚋𝚘𝚝", url="https://t.me/RazeBots"),
                  ],
                  [
-                    InlineKeyboardButton(text="𝙱𝚄𝙸𝙻𝙳 𝚂𝚃𝙰𝚃𝚄𝚂 V1", url="https://t.me/Emili_CTbot"),
+                    InlineKeyboardButton(text="𝙱𝚄𝙸𝙻𝙳 𝚂𝚃𝙰𝚃𝚄𝚂 V1", url="https://t.me/Kittu_RoBot"),
                     InlineKeyboardButton(text="Source", url="tg://need_update_for_some_feature"),
                  ],
                  [
@@ -496,7 +493,7 @@ def Source_about_callback(update, context):
                     InlineKeyboardButton(text="𝙳𝙰𝚃𝙰 𝙱𝙰𝚂𝙴", url="https://cloud.mongodb.com/"),
                  ],
                  [
-                    InlineKeyboardButton(text="Follow meh", url="https://mobile.twitter.com/Lusifernoob"),
+                    InlineKeyboardButton(text="Follow meh", url="https://mobile.twitter.com/Dacchu_xy"),
                     InlineKeyboardButton(text="𝙻𝙰𝙽𝙶𝚄𝙰𝙶𝙴", url="https://www.python.org/"),
                  ],
                  [
