@@ -1,5 +1,5 @@
 {
-      "name": "Emli Robot",
+      "name": "Kittu Robot",
       "description": "A Powerful  Telegram group management bot with anime theme.",
       "keywords": [
          "telegram",
@@ -10,7 +10,7 @@
       ],
     
    "logo":    "https://telegra.ph/file/e8baa0a32d528b548aa45.jpg",  
-   "repository": "https://github.com/NoobLeechX/EMLI",
+   "repository": "https://github.com/XDacchuX/KittuRobot",
    "addons": [
           {
          "options": {
