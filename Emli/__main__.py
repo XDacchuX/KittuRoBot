@@ -364,7 +364,7 @@ def emli_about_callback(update, context):
             "\n• I can warn users until they reach max warns, with each predefined actions such as ban, mute, kick, etc."
             "\n• I have a note keeping system, blacklists, and even predetermined replies on certain keywords."
             "\n• I check for admins' permissions before executing any command and more stuffs"
-            "\n\n_Emli's licensed under the GNU General Public License v3.0_"
+            "\n\n_Kittu's licensed under the GNU General Public License v3.0_"
             "\n\n Click on button bellow to get basic help for Kittu.",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=False,
@@ -458,7 +458,7 @@ def emli_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Darshan", url="https://twitter.com/Dacchu_xy"),
+                    InlineKeyboardButton(text="Darshan", url="https://twitter.com/Dacchu_xD"),
                  ],
                  [
                     InlineKeyboardButton(text="Go Back", callback_data="emli_"),
@@ -486,15 +486,15 @@ def Source_about_callback(update, context):
                  ],
                  [
                     InlineKeyboardButton(text="𝙱𝚄𝙸𝙻𝙳 𝚂𝚃𝙰𝚃𝚄𝚂 V1", url="https://t.me/Kittu_RoBot"),
-                    InlineKeyboardButton(text="Source", url="tg://need_update_for_some_feature"),
+                    InlineKeyboardButton(text="Source", url="tg://RazeBots"),
                  ],
                  [
                     InlineKeyboardButton(text="𝙱𝙾𝚃 𝚂𝙴𝚁𝚅𝙴𝚁", url="https://heroku.com/"),
                     InlineKeyboardButton(text="𝙳𝙰𝚃𝙰 𝙱𝙰𝚂𝙴", url="https://cloud.mongodb.com/"),
                  ],
                  [
-                    InlineKeyboardButton(text="Follow meh", url="https://mobile.twitter.com/Dacchu_xy"),
-                    InlineKeyboardButton(text="𝙻𝙰𝙽𝙶𝚄𝙰𝙶𝙴", url="https://www.python.org/"),
+                    InlineKeyboardButton(text="Follow meh", url="https://mobile.twitter.com/Dacchu_xD"),
+                    InlineKeyboardButton(text="Language", url="https://www.python.org/"),
                  ],
                  [
                     InlineKeyboardButton(text="Go Back", callback_data="emli_"),
@@ -788,7 +788,7 @@ def main():
         try:
             dispatcher.bot.sendMessage(
                 f"@{SUPPORT_CHAT}", 
-                f"""**Emli Robot Started!**
+                f"""**Kittu Robot Started!**
 
 **Python:** `{memek()}`
 **Telegram Library:** `v{peler}`""",
