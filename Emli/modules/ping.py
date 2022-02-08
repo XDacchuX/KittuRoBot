@@ -83,17 +83,7 @@ def ping(update: Update, context: CallbackContext):
         "<b>Time Taken:</b> <code>{}</code>\n"
         "<b>Service Uptime:</b> <code>{}</code>".format(telegram_ping, uptime),
         parse_mode=ParseMode.HTML,
-    ), 
-    reply_markup=InlineKeyboardMarkup(
-                [
-                 [
-                    InlineKeyboardButton(text="Network", url="https://t.me/Raze_Network"),
-                 ],
-                 [
-                    InlineKeyboardButton(text="Support", url="https://t.me/RazeFriendsZone"),
-                 
-                 ]
-                ]
+    )
 
 
 @sudo_plus
